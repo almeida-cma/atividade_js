@@ -1,0 +1,2 @@
+    var jurosSimples = (capital * taxaJuros * periodo) / 100;
+    var montanteComJuros = capital + jurosSimples;
