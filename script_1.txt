@@ -1,0 +1,11 @@
+    var precoOriginal = parseFloat(document.getElementById('precoOriginal').value);
+    var percentualDesconto = parseFloat(document.getElementById('percentualDesconto').value);
+
+    if (isNaN(precoOriginal) || isNaN(percentualDesconto)) {
+        alert("Por favor, digite valores válidos.");
+        return;
+    }
+
+    var precoComDesconto = precoOriginal - (precoOriginal * (percentualDesconto / 100));
+
+    document.getElementById('precoComDesconto').innerText = precoComDesconto.toFixed(2);
